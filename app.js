@@ -5,7 +5,9 @@ var productDataWomens = [{ productUrl: 'https://www.newlook.com/uk/womens/clothi
       
       var productImg = document.createElement("img");
       productImg.setAttribute('src', productDataWomens[i].imageSrc);
-      productImg.id = 'productImg';
+      productImg.id="productImg";
+      var carouselContainer = document.getElementByClassName('carousel-container');
+       carouselContainer.appendChild(productImg);
       document.body.appendChild(productImg);
   		//document.getElementById("data"+i).src = productDataWomens[i].imageSrc
   	  
